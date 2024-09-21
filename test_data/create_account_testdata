@@ -1,0 +1,34 @@
+
+ test_create_account_invalid_data = {
+    "invalid_password": {
+        "firstname": "Jacob",
+        "lastname": "George",
+        "email_address": "andrewcastro@example.net",
+        "password": "4d0l24bl",
+        "error": "Minimum of different classes of characters in password is 3"
+    },
+    "password_mismatch": {
+        "firstname": "Jennifer",
+        "lastname": "Perkins",
+        "email_address": "laurenbowen@example.com",
+        "password": "Gcpe3dOd",
+        "password-confirmation": "R+_5CyupA",
+        "error": "same value again"
+    },
+    "incomplete_data": {
+        "firstname": "William",
+        "lastname": "Long",
+        "email_address": "",
+        "password": "1pIJ3uye@1",
+        "error": "required field"
+    }
+}
+
+test_create_account_success= {
+    "valid_data": {
+        "firstname": "Michael",
+        "lastname": "Green",
+        "email_address": "ablake@example.org",
+        "password": "z4KTPVNo*g"
+    }
+   }
